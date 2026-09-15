@@ -2,6 +2,7 @@
 
 #define trigPin 12
 #define echoPin 11
+#define serv 8
  
 Servo servoMotor;   
 
@@ -11,7 +12,7 @@ void PositionInfo(int index);
  
 void setup() 
 { 
-  servoMotor.attach(8); 
+  servoMotor.attach(serv); 
   Serial.begin(9600); 
   pinMode(trigPin, OUTPUT); 
   pinMode(echoPin, INPUT); 
